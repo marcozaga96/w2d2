@@ -89,13 +89,31 @@ if (totalShoppingCart > 50){
   Alla fine mostra il risultato in console.
 */
 
-const numeroA=35
-const numeroB=13
-const numeroC=75
-if(numeroA>numeroB>numeroC){
-  console.log(numeroA,numeroB,numeroC)
+let z1 = 6
+let z2 = 14
+let z3 = 10
+
+if (z1 >= z2) {
+  if (z3 >= z1) {
+    console.log(z3, z1, z2)
+  } else {
+    if (z3 >= z2) {
+      console.log(z1, z3, z2)
+    } else {
+      console.log(z1, z2, z3)
+    }
+  }
+} else {
+  if (z3 >= z2) {
+    console.log(z3, z2, z1)
+  } else {
+    if (z3 >= z1) {
+      console.log(z2, z3, z1)
+    } else {
+      console.log(z2, z1, z3)
+    }
+  }
 }
-  else if (numeroA>numeroC && numeroC>numeroB)
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -163,12 +181,22 @@ console.log(me)
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const nuovaArray= {
-
-}
+let myArray = []
+myArray.push(1)
+myArray.push(2)
+myArray.push(3)
+myArray.push(4)
+myArray.push(5)
+myArray.push(6)
+myArray.push(7)
+myArray.push(8)
+myArray.push(9)
+myArray.push(10)
+console.log(myArray)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+myArray[9] = 100
+console.log(myArray)
